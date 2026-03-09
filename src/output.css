@@ -213,6 +213,9 @@
   .table {
     display: table;
   }
+  .min-h-dvh {
+    min-height: 100dvh;
+  }
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
@@ -258,6 +261,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
@@ -339,6 +345,16 @@
       @media (hover: hover) {
         background-color: var(--color-gray-800);
       }
+    }
+  }
+  .md\:px-35 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 35);
+    }
+  }
+  .md\:py-5 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .md\:text-2xl {
